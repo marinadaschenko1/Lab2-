@@ -29,6 +29,8 @@ public class TCtrl {
     if(command == Commands.CLEAR_HISTORY)
     {
          history.clear();
+         return "";
          
     }
+     
       }
