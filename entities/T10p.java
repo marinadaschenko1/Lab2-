@@ -45,5 +45,11 @@ public class T10p {
          return fp;
      }
 
-
+private char intToPChar(int d) {
+        char temp = TP_SYMBOLS.charAt(d);
+        if(d < 0 || d >= 10) {
+            throw new IllegalArgumentException("Неверное значение: " + d);
+        }
+        return temp;
+    }
 }
