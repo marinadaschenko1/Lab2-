@@ -42,8 +42,8 @@ public class T10p {
     
      public int getP() 
      {
-        
-    }
+         return fp;
+     }
 
 
 }
