@@ -19,5 +19,16 @@ public class TCtrl {
     }
 
     public String doCommand(int command) {
-     //...//
-     }}
+     if(command == Commands.GET_HISTORY) {
+        String result = "";
+        for (int i = 0; i < history.size(); i++) {
+            result += i + ".) " + history.readRow(i) + "\n";
+        }
+        return result;
+    }
+    if(command == Commands.CLEAR_HISTORY)
+    {
+         history.clear();
+         
+    }
+      }
