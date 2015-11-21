@@ -52,4 +52,16 @@ private char intToPChar(int d) {
         }
         return temp;
     }
+     private String int10ToP(int aArg) 
+     {
+         String sen = "";
+        int left = aArg;
+        while (left >= fp) {
+            sen += TP_SYMBOLS.charAt(left % fp);
+            left = left/fp;
+        }
+        
+
+        return sen;
+     }
 }
