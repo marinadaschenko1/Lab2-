@@ -60,8 +60,8 @@ private char intToPChar(int d) {
             sen += TP_SYMBOLS.charAt(left % fp);
             left = left/fp;
         }
-        
-
-        return sen;
+         sen += TP_SYMBOLS.charAt(left);
+         sen = (new StringBuilder(sen)).reverse().toString();
+         return sen;
      }
 }
