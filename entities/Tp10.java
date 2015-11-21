@@ -32,7 +32,7 @@ public class Tp10 {
         try {
             rightString = number[1];
         } catch (ArrayIndexOutOfBoundsException e) {
-            rightString = aArg;
+            rightString = "";
         }
 
         if(leftString.charAt(0) == '-') {
@@ -44,7 +44,7 @@ public class Tp10 {
             result += pFracTo10(rightString);
         }
 
-        return  ;
+        return result;
     }
     
     public float doTransfer(String aArg) 
@@ -76,7 +76,7 @@ public class Tp10 {
             result += pFracTo10(rightString);
         }
 
-        return  ;
+        return result;
     }
 
 
