@@ -13,5 +13,6 @@ public class Main
                      break;
                 }
             }
-        } catch  
+        } catch (Exception e)  
+      
 }
