@@ -1,5 +1,17 @@
 
+import com.nanlagger.ui.MainWindow;
 
-public class Main {
-     //...//
+import javax.swing.*;
+
+public class Main 
+
+{
+     try {
+            for (UIManager.LookAndFeelInfo info : UIManager ) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                     
+                }
+            }
+        } catch (Exception e) 
 }
