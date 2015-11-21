@@ -7,11 +7,11 @@ public class Main
 
 {
      try {
-            for (UIManager.LookAndFeelInfo info : UIManager ) {
+            for (UIManager.LookAndFeelInfo info : UIManagerget.InstalledLookAndFeels() ) {
                 if ("Nimbus".equals(info.getName())) {
                     UIManager.setLookAndFeel(info.getClassName());
-                     
+                     break;
                 }
             }
-        } catch (Exception e) 
+        } catch  
 }
