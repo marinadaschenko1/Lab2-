@@ -85,6 +85,6 @@ private char intToPChar(int d) {
     public int getA()
     
     {
-        return sen;
+        return fa;
     }
 }
