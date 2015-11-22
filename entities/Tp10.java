@@ -85,6 +85,16 @@ public class Tp10 {
             throw new IllegalArgumentException("Основание системы счисления должно быть от 2 до " + TP_SYMBOLS.length());
         this.fp = p;
     }
+   private float pFracTo10(String aArg)
+   
+   {
+        float result = 0;
+        for (int i = 0; i < aArg.length(); i++) {
+            int temp = pCharToInt(aArg.charAt(i));
+            result += temp * ((float) Math.pow(this.fp, -(i + 1)));
+        }
 
+        return result;
+    }
 
 }
