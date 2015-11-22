@@ -64,4 +64,27 @@ private char intToPChar(int d) {
          sen = (new StringBuilder(sen)).reverse().toString();
          return sen;
      }
+         private String frac10ToP(float aArg) {
+        String sen = "";
+        float right = aArg - (int) aArg;
+        int temp;
+        for (int i=0; i<fa; i++) {
+            right *= fp;
+            temp = ((int) right);
+            sen += TP_SYMBOLS.charAt(temp);
+            right -= temp;
+        }
+        return sen;
+    }
+    public void setA(int fa) 
+    
+    {
+        this.fa = fa;
+    }
+
+    public int getA()
+    
+    {
+        return sen;
+    }
 }
