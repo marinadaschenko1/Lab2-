@@ -1,5 +1,3 @@
-package com.nanlagger.ui;
-
 import javax.swing.*;
 
 public class HelpWindow extends JFrame{
