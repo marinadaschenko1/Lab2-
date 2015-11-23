@@ -32,5 +32,22 @@ public class TCtrl {
          return "";
          
     }
+    if(command == Commands.CONVERT) {
+
+        fc1.setA(editor.read().substring(editor.read().indexOf(',')+1 == 0 ? editor.read().length() : editor.read().indexOf(',')+1).length());
+        String result = fc1.doTransfer(fc2.doTransfer(editor.read()));
+        history.addRow(editor.read(), fc2.getP(), result, fc1.getP());
+        return result;
+    }
+    return editor.edit(command);
+}
+
+    public void setInP(int p) {
+        fc2.setP(p);
+    }
+
+    public void setOutP(int p) {
+        fc1.setP(p);
+    }
      
       }
