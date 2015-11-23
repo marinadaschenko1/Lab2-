@@ -85,6 +85,29 @@ public class Tp10 {
             throw new IllegalArgumentException("Основание системы счисления должно быть от 2 до " + TP_SYMBOLS.length());
         this.fp = p;
     }
+    
+     public int getP() {
+        return fp;
+    }
+
+    private int pCharToInt(char symbol) {
+        int temp = TP_SYMBOLS.indexOf(symbol);
+        if(temp >= this.fp) {
+            throw new IllegalArgumentException("Неверный символ: " + symbol);
+        }
+        return temp;
+    }
+
+    private int pIntTo10(String aArg) {
+        int result = 0;
+        for(int i=0; i<aArg.length(); i++) {
+            int temp = pCharToInt(aArg.charAt(i));
+            result += temp * ((int) Math.pow(this.fp, aArg.length() - (i+1)));
+        }
+
+        return result;
+    }
+    
    private float pFracTo10(String aArg)
    
    {
