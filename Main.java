@@ -14,5 +14,13 @@ public class Main
                 }
             }
         } catch (Exception e)  
-      
+        {
+      try {
+                UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+            } catch (Exception ex) {
+                // not worth my time
+            }
+        }
+        MainWindow mainForm = new MainWindow();
+    }
 }
